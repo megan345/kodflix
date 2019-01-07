@@ -4,6 +4,17 @@
 
 .cover {
   width: 100%;
+  max-height: 320px;
+}
+
+.form-row {
+  padding: 20px 0;
+  display: flex;
+  margin: 30px;
+}
+
+.child {
+  flex: 1;
 }
 /* 
 body { background-image: url("./moviecover.jpg");

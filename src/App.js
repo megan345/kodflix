@@ -23,8 +23,18 @@ class App extends Component {
       //   </header>
       // </div>
       <div className="App">
-        <h1>Welcome to Kodflix</h1>
-         <img src={moviecover} className="cover" alt="logo" />
+          <div class="container">
+            <div class="form-row">
+              <div class="child">Black Mirror</div>
+              <div class="child">Breaking Bad</div>
+              <div class="child">Death Note</div>
+            </div>
+            <div class="form-row">
+              <div class="child">Game of Thrones</div>
+              <div class="child">The Walking Dead</div>
+              <div class="child">The Wire</div>
+            </div>
+         </div>
 
       </div>
     );
