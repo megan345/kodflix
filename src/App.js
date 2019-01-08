@@ -11,26 +11,9 @@ import nottinghill from './Images/nottinghill.jpg';
 class App extends Component {
   render() {
     return (
-      // <div className="App">
-      //   <header className="App-header">
-      //     <img src={logo} className="App-logo" alt="logo" />
-      //     <p>
-      //       Hello It's the first day! <code>src/App.js</code> and save to reload.
-      //     </p>
-      //     <a
-      //       className="App-link"
-      //       href="https://reactjs.org"
-      //       target="_blank"
-      //       rel="noopener noreferrer"
-      //     >
-      //       Learn React
-      //     </a>
-      //   </header>
-      // </div>
       <div className="App">
         <div class="container">
           <div class="form-row">
-
             <div class="child">
               <img src={ted} className="App-logo" alt="ted-movie" />
             </div>
@@ -40,9 +23,7 @@ class App extends Component {
             <div class="child">
               <img src={matrix} className="App-logo" alt="matrix-movie" />
             </div>
-
           </div>
-
           <div class="form-row">
             <div class="child">
               <img src={hitch} className="App-logo" alt="hitch-movie" />
@@ -53,7 +34,6 @@ class App extends Component {
             <div class="child">
               <img src={casinoroyale} className="App-logo" alt="casinoroyale-movie" />
             </div>
-
           </div>
         </div>
       </div>
