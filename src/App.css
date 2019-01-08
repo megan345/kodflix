@@ -36,7 +36,8 @@ img {
   width: 100%;
   opacity: .8;
   color: white;
-  transition: bottom ease 1s;
+  background-color:black;
+  font-size: 14px;
 }
 
 .child:hover .overlay{
