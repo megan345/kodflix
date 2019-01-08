@@ -2,11 +2,11 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import casinoroyale from './Images/casinoroyale.jpg';
-import ted from './Images/ted.jpg';
-import goodwillhunting from './Images/goodwillhunting.jpg';
-import matrix from './Images/matrix.jpg';
-import hitch from './Images/hitch.jpg';
-import nottinghill from './Images/nottinghill.jpg';
+import titanic from './Images/titanic.jpg';
+import jasonbourne from './Images/jasonbourne.jpg';
+import fightclub from './Images/fightclub.jpg';
+import martian from './Images/martian.jpg';
+import oceans8 from './Images/oceans8.jpg';
 
 class App extends Component {
   render() {
@@ -15,19 +15,19 @@ class App extends Component {
         <div class="container">
           <div class="form-row">
             <div class="child">
-              <img src={ted} className="image" alt="ted-movie" />
+              <img src={titanic} className="image" alt="ted-movie" />
               <div className="overlay">
-                <h1>TED The Movie</h1>
+                <h1>Titanic</h1>
               </div>
             </div>
             <div class="child">
-              <img src={goodwillhunting} className="image" alt="goodwillhunting-movie" />
+              <img src={jasonbourne} className="image" alt="jasonbourne" />
               <div className="overlay">
                 <h1>Good Will Hunting</h1>
               </div>
             </div>
             <div class="child">
-              <img src={matrix} className="image" alt="matrix-movie" />
+              <img src={fightclub} className="image" alt="fightclub" />
               <div className="overlay">
                 <h1>The Matrix</h1>
               </div>
@@ -35,15 +35,15 @@ class App extends Component {
           </div>
           <div class="form-row">
             <div class="child">
-              <img src={hitch} className="image" alt="hitch-movie" />
+              <img src={martian} className="image" alt="martian" />
               <div className="overlay">
                 <h1>Hitch</h1>
               </div>
             </div>
             <div class="child">
-              <img src={nottinghill} className="image" alt="nottinghill-movie" />
+              <img src={oceans8} className="image" alt="nottinghill-movie" />
               <div className="overlay">
-                <h1>Notting Hill</h1>
+                <h1>Oceans 8</h1>
               </div>
             </div>
             <div class="child">
