@@ -25,6 +25,13 @@ img {
   padding: 0px;
   margin: 0px;
 }
+
+@media only screen and (max-width: 600px) {
+
+  .form-row {
+    flex-direction: column;
+  }
+}
 /* 
 body { background-image: url("./moviecover.jpg");
       background-repeat: no-repeat;
