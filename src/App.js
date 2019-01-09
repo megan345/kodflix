@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Stack from './Stack';
 import logo from './logo.svg';
 import './App.css';
 import casinoroyale from './Images/casinoroyale.jpg';
@@ -14,44 +15,14 @@ class App extends Component {
       <div className="App">
         <div class="container">
           <div class="form-row">
-            <div class="child">
-              <img src={titanic} className="image" alt="ted-movie" />
-              <div className="overlay">
-                <h1>Titanic</h1>
-              </div>
-            </div>
-            <div class="child">
-              <img src={jasonbourne} className="image" alt="jasonbourne" />
-              <div className="overlay">
-                <h1>Good Will Hunting</h1>
-              </div>
-            </div>
-            <div class="child">
-              <img src={fightclub} className="image" alt="fightclub" />
-              <div className="overlay">
-                <h1>The Matrix</h1>
-              </div>
-            </div>
+            <Stack name="Titanic" logo = {titanic}/>
+            <Stack name="Jason Bourne" logo = {jasonbourne}/>
+            <Stack name="Fight Club" logo = {fightclub}/>
           </div>
           <div class="form-row">
-            <div class="child">
-              <img src={martian} className="image" alt="martian" />
-              <div className="overlay">
-                <h1>Hitch</h1>
-              </div>
-            </div>
-            <div class="child">
-              <img src={oceans8} className="image" alt="nottinghill-movie" />
-              <div className="overlay">
-                <h1>Oceans 8</h1>
-              </div>
-            </div>
-            <div class="child">
-              <img src={casinoroyale} className="image" alt="casinoroyale-movie" />
-              <div className="overlay">
-                <h1>Casino Royale</h1>
-              </div>
-            </div>
+            <Stack name="Martian" logo = {martian} />
+            <Stack name="Oceans 8" logo = {oceans8} />
+            <Stack name="Casino Royale" logo = {casinoroyale} />
           </div>
         </div>
       </div>
