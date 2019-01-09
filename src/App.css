@@ -17,6 +17,7 @@
   flex: 1;
   position: relative;
   padding: 20px;
+  overflow: hidden;
 }
 
 img {
@@ -29,19 +30,19 @@ img {
 }
 
 .overlay {
-  display: none;
   position: absolute;
-  bottom: 0;
+  bottom: -100px;
   left: 0;
   width: 100%;
   opacity: .8;
   color: white;
   background-color:black;
   font-size: 14px;
+  transition: bottom ease 1s;
 }
 
 .child:hover .overlay{
-  display: block;
+  bottom: 0;
 }
 
 @media only screen and (max-width: 600px) {
