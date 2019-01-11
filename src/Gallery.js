@@ -12,18 +12,14 @@ import oceans8 from './Images/oceans8.jpg';
 export default function Gallery(){
     return (
         <div>
-            <div class="container">
-            <div class="form-row">
-                <Movie id="titanic" name="Titanic" logo = {titanic} />
-                <Movie name="Jason Bourne" logo = {jasonbourne} />
-                <Movie name="Fight Club" logo = {fightclub}/>
-            </div>
-            <div class="form-row">
-                <Movie name="Martian" logo = {martian} />
-                <Movie name="Oceans 8" logo = {oceans8} />
-                <Movie name="Casino Royale" logo = {casinoroyale} />
-            </div>
-            </div>
+                <div class="container">
+                    <Movie id="titanic" name="Titanic" logo = {titanic} />
+                    <Movie name="Jason Bourne" logo = {jasonbourne} />
+                    <Movie name="Fight Club" logo = {fightclub}/>
+                    <Movie name="Martian" logo = {martian} />
+                    <Movie name="Oceans 8" logo = {oceans8} />
+                    <Movie name="Casino Royale" logo = {casinoroyale} />
+                </div>
         </div>
     )
 }
