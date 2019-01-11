@@ -14,8 +14,8 @@ export default function Gallery(){
         <div>
             <div class="container">
             <div class="form-row">
-                <Movie name="Titanic" logo = {titanic}/>
-                <Movie name="Jason Bourne" logo = {jasonbourne}/>
+                <Movie id="titanic" name="Titanic" logo = {titanic} />
+                <Movie name="Jason Bourne" logo = {jasonbourne} />
                 <Movie name="Fight Club" logo = {fightclub}/>
             </div>
             <div class="form-row">
