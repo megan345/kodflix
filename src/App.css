@@ -41,7 +41,7 @@ img {
   transition: bottom ease 1s;
 }
 
-.child:hover .overlay{
+.child:hover .overlay {
   bottom: 0;
 }
 
