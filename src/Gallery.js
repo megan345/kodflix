@@ -8,6 +8,7 @@ import martian from './Images/martian.jpg';
 import oceans8 from './Images/oceans8.jpg';
 
 // Gallery component
+//
 
 export default function Gallery(){
     return (
