@@ -12,14 +12,25 @@ import oceans8 from './Images/oceans8.jpg';
 export default function Gallery(){
     return (
         <div>
-                <div class="container">
-                    <Movie id="titanic" name="Titanic" logo = {titanic} />
-                    <Movie name="Jason Bourne" logo = {jasonbourne} />
-                    <Movie name="Fight Club" logo = {fightclub}/>
-                    <Movie name="Martian" logo = {martian} />
-                    <Movie name="Oceans 8" logo = {oceans8} />
-                    <Movie name="Casino Royale" logo = {casinoroyale} />
-                </div>
+            <div class="container">
+                {
+                    // Create the stack by iterating over the array
+                    // using map
+                    getGallery().map(movie => 
+                        (<Movie id={movie.id} name={movie.name} logo={movie.logo}/>))
+                }
+            </div>
         </div>
     )
+}
+
+function getGallery(){
+    return ([
+        { id: 'titanic', name: 'Titanic', logo: titanic },
+        { id: 'jasonbourne', name: 'Jason Bourne', logo: jasonbourne },
+        { id: 'fightlcub', name: 'Fight Club', logo: fightclub },
+        { id: 'martian', name: 'Martian', logo: martian },
+        { id: 'oceans8', name: 'Oceans 8', logo: oceans8 },
+        { id: 'casinoroyale', name: 'Casino Royale', logo: casinoroyale}
+    ])
 }
