@@ -18,7 +18,8 @@ export default function Gallery(){
                     // Create the stack by iterating over the array
                     // using map
                     getGallery().map(movie => 
-                        (<Movie id={movie.id} name={movie.name} logo={movie.logo}/>))
+                        (<Movie id={movie.id} name={movie.name} logo={movie.logo}
+                            message={"Hello, this will be the details page for each Movie & TV show :)"} />))
                 }
             </div>
         </div>
