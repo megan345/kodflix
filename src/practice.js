@@ -9,14 +9,6 @@
 
 
 
-
-
-
-
-
-
-
-
 // function getAverageScore(...arr) {
 // 	var numbers = [];
 // 	var name = [];
