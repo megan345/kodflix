@@ -1,0 +1,13 @@
+.Details .content {
+    display: flex;
+}
+
+.details-child {
+    flex: 1;
+}
+
+@media only screen and (max-width: 550px) {
+    .Details .content {
+        flex-direction: column;
+    }
+}

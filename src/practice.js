@@ -1,6 +1,20 @@
 
 
+function getUserDetails(user){
+    console.log (
+        user.firstName ||
+        user.lastName ||
+        user.email
+    )
+}
 
+getUserDetails(
+    // {
+    //     firstName: "",
+    //     lastName: "",
+    //     email: ""
+    // }
+)
 
 
 
