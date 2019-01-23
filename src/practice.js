@@ -1,32 +1,27 @@
+{
+    function findLast(string) {
+        var words = string.split(' ');
+        console.log(words);
+        var reversedWords = words.reverse();
+        console.log(reversedWords);
+    
+        let answer = reversedWords.find(function(word, index){
+            if (word[index] == word[index].toUpperCase()) {
+                return word;
+            }
+        })
 
+        console.log(answer);
+    }
 
-function getUserDetails(user){
-    console.log (
-        user.firstName ||
-        user.lastName ||
-        user.email
-    )
+    findLast(
+        'See Bradley Cooper make Lady Gaga a star',
+    );
+
 }
 
-getUserDetails(
-    // {
-    //     firstName: "",
-    //     lastName: "",
-    //     email: ""
-    // }
-)
 
-
-
-
-
-
-
-
-// function getAverageScore(...arr) {
-// 	var numbers = [];
-// 	var name = [];
-// 	arr.forEach(function(element) {
+	// arr.forEach(function(element) {
 // 		if (typeof element != 'string') {
 // 			numbers.push(element);
 // 		} else {
