@@ -1,27 +1,317 @@
-{
-    function findLast(string) {
-        var words = string.split(' ');
-        console.log(words);
-        var reversedWords = words.reverse();
-        console.log(reversedWords);
+
+
+
+
+
+// function findRepeatedCity(arr) {
+	
+// 	var myObject = {};
+
+// 	for (var key in arr) {
+//     	if (myObject[arr[key]])
+//       		return arr[key];
+//     	else
+//       		myObject[arr[key]] = true;
+//   }
+// 	return undefined;
+// }
+
+
+
+
+// function getVowelCount(string) {
+// 	let vowels = 'aeiou';
+// 	var count = 0;
+// 	let splitstring = string.split('');
+// 	console.log(splitstring);
+// 	splitstring.forEach(function(value) {
+// 			if (vowels.includes(value)) {
+// 				count ++;
+// 				console.log(count);
+// 			}
+// 		})
+// 	console.log (count);
+
+// }
+
+// getVowelCount('abracadabra');
+
+
+
+// function getConsecutiveChains(number) {
+// 	let numbers = (number).toString(10).split("").map(Number);
+// 	console.log(numbers);
+// 	let count = numbers[0];
+// 	let indexes = [];
+
+// 	numbers.map(function(num, index) {
+// 		if (num !== count) {
+// 			indexes.push(index);
+// 			count = num + 1;
+// 		} else {
+// 			count++;
+// 		}
+// 	})
+// 	console.log(indexes);
+// 	let answer = numbers.splice(0, indexes[0]);
+// 	console.log(answer);
+// 	answer = Number(answer.join(''));
+// 	console.log(numbers);
+// 	numbers = Number(numbers.join(''));
+// 	console.log(answer, numbers);
+// 	let answerArray = [answer, numbers];
+// 	console.log(answerArray);
+// }
+
+// getConsecutiveChains(1235678);
+
+
+
+
+
+
+
+
+
+
+// function findTokens(sentence, token) {
+// 	let re = new RegExp(token, 'g');
+// 	console.log(re);
+// 	console.log(re.exec(sentence));
+// }
+
+// findTokens('Is it free?', 'e');
+
+
+
+// function findMostPopulatedCountry(countries) {
+//     let index = countries.length;
+// 	let answer = countries
+// 		.sort((a, b) => 
+//             a.population - b.population)[index-1].name;
+//     console.log (answer);
+// }
+
+// findMostPopulatedCountry([
+// 	{ name: 'Ukraine', population: '44009214' }, 
+// 	{ name: 'Italy', population: '59290969' },
+// 	{ name: 'Bulgaria', population: '7036848' }
+// ]);
+
+
+
+
+
+
+
+// function findRepeatedCity(cityArray) {
+//     let cities = []
+//     let answer;
+// 	cityArray
+// 		.forEach(function(city) {
+// 			return cities.includes(city) ? answer = city : 
+// 				cities.push(city);
+//         })
+//     console.log(answer);
+// }
+
+// findRepeatedCity(
+// 	['Lucerne', 'Valencia', 'Valencia', 'Salzburg']
+// );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// GET TOP CHARACTER
+// function getTopCharacter(characters) {
+	
+// 	let answer = characters
+// 		.map(character => {
+// 			return {
+// 				name: character.name,
+// 				scores: getAverageScore(character.scores)
+// 			};
+//         })
+//     console.log(answer);
+//         answer = answer.sort((a, b) =>  a.scores - b.scores)[0].name;
+
+//     console.log(answer);
+
+//     function getAverageScore(scores){
+// 		return scores.reduce((average, value) => average + value / 3, 0);
+// 	}
+// }
+
+// getTopCharacter([
+// 	{ name: 'Arnold', scores: [46, 57, 83] }, 
+// 	{ name: 'Kevin', scores: [86, 95, 93] },
+// 	{ name: 'Silvester', scores: [66, 46, 65] }
+// ]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FIND WORD IN CAPTIALS
+// function findWordInCapitals(string) {
+//     let answer = string
+//         .split(' ')
+// 		.find(word => {
+// 			return word === word.toUpperCase();
+//         }) || '';
+//     console.log(answer);
+// }
+
+// findWordInCapitals(
+// 	'The MEMORY we shared is no longer COHERENT'
+// );
+
+
+
+
+
+
+
+
+
+
+// function getFruitNames(fruits) {
+//     let answer = fruits.map(function(fruit) {
+//         return {
+//             name: fruit.colour
+//         }
+//     });
+//     console.log(answer);
+// }
+
+// getFruitNames( [{
+//     name: 'banana',
+//     colour: 'yellow'
+// }, {
+//     name: 'apple',
+//     colour: 'green'
+// }])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function removeCharacters(str, chars) {
+	
+//     let letters = str.split('');
+
+//     let filteredarray = letters.filter(function(letter) {
+//         return letter != chars[0];
+//     })
+	
+//     return filteredarray;
+
+// }
+
+// removeCharacters('a!b!c', ['!']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function getAverageScore(...values) {
+//     let numbers = [];
+//     let arr = values;
+// 	let name = [];
+// 	arr.map((element) => {
+// 		if (typeof element != 'string') {
+// 			numbers.push(element);
+// 		} else {
+// 			name.push(element);
+// 		}
+// 	});
+		
+// 	let aver = Math.round(numbers.reduce((average, value) => {
+// 		return average + value / numbers.length}, 0));
+
+// 	console.log (`The average score for ${name[0]} is ${aver}`);
+
+// }
+
+// getAverageScore('Louise', 53, 29);
+
+
+
+
+
+
+
+
+// {
+//     function findLast(string) {
+//         var words = string.split(' ');
+//         console.log(words);
+//         var reversedWords = words.reverse();
+//         console.log(reversedWords);
     
-        let answer = reversedWords.find(function(word, index){
-            if (word[index] == word[index].toUpperCase()) {
-                return word;
-            }
-        })
+//         let answer = reversedWords.find(function(word, index){
+//             if (word[index] == word[index].toUpperCase()) {
+//                 return word;
+//             }
+//         })
 
-        console.log(answer);
-    }
+//         console.log(answer);
+//     }
 
-    findLast(
-        'See Bradley Cooper make Lady Gaga a star',
-    );
+//     findLast(
+//         'See Bradley Cooper make Lady Gaga a star',
+//     );
 
-}
+// }
 
 
-	// arr.forEach(function(element) {
+// 	arr.forEach(function(element) {
 // 		if (typeof element != 'string') {
 // 			numbers.push(element);
 // 		} else {
