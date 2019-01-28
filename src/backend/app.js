@@ -3,6 +3,8 @@ const app = express();
 const port = 3000;
 const getMovies = require('./movies.js');
 
+// New command to start the server is npm run start-backend
+
 app.get('/rest/movie-details', (req, res) => 
     res.send(getMovies()))
 
