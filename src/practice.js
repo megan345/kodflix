@@ -2,7 +2,6 @@
 
 
 
-
 // function findRepeatedCity(arr) {
 	
 // 	var myObject = {};
