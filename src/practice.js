@@ -2,6 +2,35 @@
 
 
 
+
+
+
+
+
+// app.get('/', function(req, res) {
+//     const customers = [
+//         {id: 1, firstName: 'John', lastName: 'Doe'},
+//         {id: 2, firstname: 'Poppy', lastName: 'Curtis'},
+//         {id: 3, firstName: 'Ricardo', lastName: 'Mallols'}
+//     ]
+//     res.json(customers);
+// })
+
+
+// function search(sentence, token) {
+//     let re = new RegExp(token, 'i');
+
+//     return sentence.search(re);
+// }
+
+function findRepeatedCity(cities){
+    return cities.find(city => {
+        return cities.filter(aCity => city === aCity).length > 1
+    })
+}
+
+findRepeatedCity(['Vienna', 'Prague', 'Vienna']);
+
 // function findRepeatedCity(arr) {
 	
 // 	var myObject = {};
