@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3001;
 const getMovies = require('./movies.js');
 
 // New command to start the server is npm run start-backend
@@ -13,3 +13,4 @@ app.get('/', (req, res) =>
 
 app.listen(port, () => 
     console.log(`Example app listening on port ${port}!`))
+
