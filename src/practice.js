@@ -3,6 +3,108 @@
 
 
 
+
+
+
+
+
+
+
+
+// function swap(person) {
+// 	let keys = Object.keys(person);
+// 	let values = Object.values(person);
+//     let obj = {};
+//     console.log(values);
+
+//     console.log(obj);
+
+//     console.log(keys);
+//     console.log(keys[0]);
+
+//     obj[keys[0]] = values[0];
+//     obj[keys[1]] = values[1];
+//     console.log(obj);
+//     // console.log( obj.keys[0] );
+
+// }
+
+// swap(
+// 	{ firstName: 'Joseph', lastName: 'Blatter' }
+// );
+
+
+
+
+// function getVowelCount(letters) {
+// 	var vowels = 'aeiou';
+//      let splitletters = letters.split('');
+//      let count = 0;
+    
+//     console.log (splitletters.reduce((count, letter) => 
+//         vowels.includes(letter) ? count + 1: count, 0));
+        
+// }
+
+// getVowelCount('abracadabra');
+
+
+
+
+
+
+
+
+// function getAverageScore(name, ...scores) {
+// 	let average = getAverage (scores);
+// 	return `The average score for ${name} is ${average}`;
+// }
+
+// function getAverage(values) {
+// 	let total = values.reduce((total, value) {
+// 		return total + value;
+// 	})
+// 	return total / values.length;
+// }
+
+// getAverageScore('John', 85, 43, 78, 59);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function getAverage(values) {
+// 	let total = values.reduce(function(total, value) {
+// 		return total + value;
+// 	});
+// 	return Math.round(total / values.length);
+// }
+
+// getAverage([56, 85, 93]);
+
+// function getTopCharacter(characters) {
+// 	characters.forEach(function(character) {
+// 		character.scores = getAverage(character.scores);
+//     });
+//     console.log(characters);
+//     let sorted = characters.sort(function(char1, char2) {
+// 		return char2.scores - char1.scores;
+//     })
+//     console.log(sorted);
+// }
+
+
+
+
+
 // function findRepeatedCity(arr) {
 	
 // 	var myObject = {};

@@ -12,12 +12,21 @@ export default class Details extends Component {
     };
   }
 
+
   componentDidMount() {
     let movieId = this.props.match.params.movieId;
     let movie = getGallery().find((mov) => movieId === mov.id);
     this.setState({ movie });
-  }
+  
 
+  fetch('/rest/movie-details')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(myJson);
+  });
+  }
   render() {
     if (this.state.movie === undefined) {
       return <Redirect to="/not-found" />;
