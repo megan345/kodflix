@@ -6,11 +6,11 @@ const path = require('path');
 
 // New command to start the server is npm run start-backend
 
-app.get('/rest/movie-details', (req, res) => 
-    res.send(getMovies()))
+app.get('/rest/shows', (req, res) => 
+    res.send(getMovies()));
 
-app.get('/', (req, res) => 
-    res.send("Hello, World"))
+// app.get('/', (req, res) => 
+//     res.send("Hello, World"));
 
 app.use(express.static(path.join(__dirname, '../../build')));
 app.get('*', function (req, res) { 
