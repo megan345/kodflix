@@ -9,7 +9,7 @@ import oceans8 from './Images/oceans8.jpg';
 import getGallery from './gallery-get';
 
 // Gallery component
-//
+// JUST FOR PULL REQUEST PURPOSES
 
 export default function Gallery(){
     return (
