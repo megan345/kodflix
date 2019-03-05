@@ -21,12 +21,11 @@ export default class Details extends Component {
 
   fetch('/rest/shows')
       .then(function(response) {
-        console.log(response.json());
         return response.json();
       })
-      .then(galleries => {
+      .then(gallery => {
         let galleryImageId = this.props.match.params.movieId;
-        let movie = galleries.find(show => show.id === galleryImageId);
+        let movie = gallery.find(show => show.id === galleryImageId);
         this.setState({ movie: movie });
     });
   }
