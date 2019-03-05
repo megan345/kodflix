@@ -1,28 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Movie from './Movie';
-import casinoroyale from './Images/casinoroyale.jpg';
-import titanic from './Images/titanic.jpg';
-import jasonbourne from './Images/jasonbourne.jpg';
-import fightclub from './Images/fightclub.jpg';
-import martian from './Images/martian.jpg';
-import oceans8 from './Images/oceans8.jpg';
-import getGallery from './gallery-get';
 
 // Gallery component
 //
+class Gallery extends Component {
+    constructor() {
+        super();
+        this.state = {
+            movies: []
+        };
+    }
 
-export default function Gallery(){
-    return (
-        <div>
-            <div class="container">
-                {
-                    // Create the stack by iterating over the array
-                    // using map
-                    getGallery().map(movie => 
-                        (<Movie id={movie.id} name={movie.name} logo={movie.logo}
-                            message={"Hello, this will be the details page for each Movie & TV show :)"} />))
-                }
+    componentDidMount() {
+        fetch("/rest/shows")
+            .then(response => {
+                return response.json();
+            })
+            .then(movies => {
+                this.setState({movies: movies});
+            });
+    }
+    render() {
+        return (
+            <div>
+                <div className="container">
+                    {this.state.movies.map(movies => (
+                        <Movie id={movies.id} name={movies.name} />
+                    ))}
+                </div>
             </div>
-        </div>
-    )
+        );
+    }
 }
+export default Gallery;

@@ -28,9 +28,10 @@ export default class Details extends Component {
   });
   }
   render() {
+    let movie = this.state.movie;
     if (this.state.movie === undefined) {
       return <Redirect to="/not-found" />;
-    } else {
+    } else if (this.state.movie) {
       return (
         <div className="Details">
           <h1>{this.state.movie.name}</h1>
@@ -42,7 +43,12 @@ export default class Details extends Component {
             </div>
           </div>
         </div>
-      )
+      );
+    }
+    else {
+      return (
+        <div></div>
+      );
     }
   }
 
