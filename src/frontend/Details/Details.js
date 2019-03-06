@@ -13,22 +13,18 @@ export default class Details extends Component {
   }
 
 
-  componentDidMount() {
-    // let movieId = this.props.match.params.movieId;
-    // let movie = getGallery().find((mov) => movieId === mov.id);
-    // this.setState({ movie });
-  
+  componentDidMount() {  
+    fetch('/rest/shows')
+        .then(response => {
+          return response.json();
+        })
+        .then(gallery => {
+          let galleryImageId = this.props.match.params.movieId;
+          let movie = gallery.find(show => show.id === galleryImageId);
+          this.setState({ movie: movie });
+      });
+    }
 
-  fetch('/rest/shows')
-      .then(function(response) {
-        return response.json();
-      })
-      .then(gallery => {
-        let galleryImageId = this.props.match.params.movieId;
-        let movie = gallery.find(show => show.id === galleryImageId);
-        this.setState({ movie: movie });
-    });
-  }
   render() {
     let movie = this.state.movie;
     if (this.state.movie === undefined) {
@@ -38,7 +34,7 @@ export default class Details extends Component {
         <div className="Details">
           <h1>{this.state.movie.name}</h1>
           <div className="content">
-            <div className="child">{this.state.movie.details}</div>
+            <div className="child">{movie.synopsis}</div>
             <div className="child">
               <img
                 src={require(`../common/images/${movie.id}.jpg`)}
