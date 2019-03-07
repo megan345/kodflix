@@ -13,12 +13,8 @@ class Gallery extends Component {
 
     componentDidMount() {
         fetch("/rest/shows")
-            .then(response => {
-                return response.json();
-            })
-            .then(movies => {
-                this.setState({movies: movies});
-            });
+            .then(response => response.json())
+            .then(movies => this.setState({movies: movies}));
     }
     render() {
         return (
