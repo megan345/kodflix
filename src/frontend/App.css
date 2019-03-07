@@ -18,7 +18,7 @@
   margin-right: auto;
 }
 
-.child {
+.item {
   /* flex: 1;
   flex-basis: 120px; */
   position: relative;
@@ -43,6 +43,7 @@ img {
   text-align: center;
 }
 
-.child:hover .overlay {
+.item:hover .overlay {
   bottom: 0;
 }
+

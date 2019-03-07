@@ -34,8 +34,8 @@ export default class Details extends Component {
         <div className="Details">
           <h1>{this.state.movie.name}</h1>
           <div className="content">
-            <div className="child">{movie.synopsis}</div>
-            <div className="child">
+            <div className="item">{movie.synopsis}</div>
+            <div className="item">
               <img
                 src={require(`../common/images/${movie.id}.jpg`)}
                 alt={`${movie.id}`}

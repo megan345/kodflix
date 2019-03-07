@@ -20,8 +20,8 @@ class Gallery extends Component {
         return (
             <div>
                 <div className="container">
-                    {this.state.movies.map(movies => (
-                        <Movie id={movies.id} name={movies.name} />
+                    {this.state.movies.map(movie => (
+                        <Movie id={movie.id} name={movie.name} />
                     ))}
                 </div>
             </div>
