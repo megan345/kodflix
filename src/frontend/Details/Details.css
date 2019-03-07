@@ -1,17 +1,17 @@
-.Details .content {
+.details .content {
     display: flex;
 }
 
-.details-child {
+.child {
     flex: 1;
+}
+
+body {
+    background-color: grey;
 }
 
 @media only screen and (max-width: 550px) {
     .Details .content {
         flex-direction: column;
     }
-}
-
-body {
-    background-color: grey;
 }
